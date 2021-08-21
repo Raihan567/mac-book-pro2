@@ -35,12 +35,12 @@ document.getElementById('apply-code').addEventListener('click', function () {
         totalAmount.innerText = newAmount;
         console.log(totalAmount.innerText);
         document.getElementById('apply-code').disabled = true;
-        return newAmount;
 
+        // clear input field 
+        userPromo.value = ' ';
+        return newAmount;
     }
-    // clear input field 
-    userPromo.value = ' ';
-    totalPriceUpdate()
+
 
 })
 /* Memory cost */
